@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Client {
+public class Hero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,4 +18,6 @@ public class Client {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private Long power;
 }
